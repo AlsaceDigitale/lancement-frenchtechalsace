@@ -1,0 +1,149 @@
+$link-color: #37495f
+$link-color-alternate: #96c8df
+$fake-background-color: #a7dff8
+$light-blue: #3399db
+
+body
+  color: $link-color
+  margin-top: 50px
+
+$btn-thunderclap: #ff9c00
+.btn-thunderclap
+  color: white
+  background-color: $btn-thunderclap
+  box-shadow: 1px 1px 0 darken($btn-thunderclap, 5%)
+  &:hover
+    color: white
+    text-decoration: none
+    background-color: lighten($btn-thunderclap, 5%)
+
+$btn-frenchtech-natio: #f63d43
+.btn-frenchtech-natio
+  margin-left: 20px
+  color: white
+  background-color: $btn-frenchtech-natio
+  box-shadow: 1px 1px 0 darken($btn-frenchtech-natio, 5%)
+  &:hover
+    color: white
+    text-decoration: none
+    background-color: lighten($btn-frenchtech-natio, 5%)
+
+$btn-subscribe: $light-blue
+.btn-subscribe
+  color: white
+  background-color: $btn-subscribe
+  box-shadow: 1px 1px 0 darken($btn-subscribe, 5%)
+  &:hover
+    color: white
+    text-decoration: none
+    background-color: lighten($btn-subscribe, 5%)
+
+.navbar
+  border-bottom: 3px solid $link-color-alternate
+  margin-bottom: 0
+  background-color: white
+  min-height: 110px
+  padding-top: 30px
+
+  .buttons
+    a
+      text-transform: uppercase
+      line-height: 1
+
+.nav
+  margin-right: 30px
+  > li
+    > a
+      font-family: 'Lato', sans-serif
+      font-weight: 700
+      text-transform: uppercase
+      color: $link-color
+      &:hover
+        background-color: inherit
+        text-decoration: underline
+
+a.silent
+  color: inherit
+
+section.main
+  padding: 50px
+  h1
+    color: white
+    text-transform: uppercase
+    margin-bottom: 0
+    margin-top: 0
+
+section.animation
+  background-color: #a7dff8
+  min-height: 690px
+
+section.partenaires
+  padding: 20px
+
+section.lancement
+  background-color: $light-blue
+
+section.agenda
+  padding: 50px
+  .agenda-row
+    margin-top: 25px
+    .hour
+      color: $light-blue
+      font-weight: bold
+    h2
+      font-weight: bold
+      margin-top: 5px
+      margin-bottom: 5px
+    p
+      margin-bottom: 0
+  > .container:first-child
+    margin-top: 0
+
+
+section.frenchtech
+  background-color: #e41b23
+
+section.frenchtech-explanation
+  padding: 20px
+  h2
+    font-weight: bold
+    margin-top: 5px
+    margin-bottom: 5px
+
+section.pourquoi
+  padding: 20px
+  background-color: #f63d43
+  color: white
+  h1
+    font-weight: bold
+    margin-top: 0
+    margin-bottom: 20px
+  strong
+    text-transform: uppercase
+
+section.frenchtech-natio
+  padding: 20px
+  background-color: #d8252b
+  color: white
+  strong
+    text-transform: uppercase
+
+section.soutenir
+  background-color: #f39500
+
+section.thunderclap
+  padding: 20px
+  background-color: #e87301
+  color: white
+
+
+@media screen and (max-width: 767px)
+  .nav
+    margin-right: 0
+  .buttons
+    text-align: center
+    > li
+      padding-bottom: 10px
+      padding-top: 10px
+      display: block
+      position: relative

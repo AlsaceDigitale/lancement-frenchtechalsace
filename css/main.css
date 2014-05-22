@@ -1,0 +1,137 @@
+body {
+  color: #37495f;
+  margin-top: 50px; }
+
+.btn-thunderclap {
+  color: white;
+  background-color: #ff9c00;
+  box-shadow: 1px 1px 0 #e68c00; }
+  .btn-thunderclap:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #ffa61a; }
+
+.btn-frenchtech-natio {
+  margin-left: 20px;
+  color: white;
+  background-color: #f63d43;
+  box-shadow: 1px 1px 0 #f5252b; }
+  .btn-frenchtech-natio:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #f7555b; }
+
+.btn-subscribe {
+  color: white;
+  background-color: #3399db;
+  box-shadow: 1px 1px 0 #258dd0; }
+  .btn-subscribe:hover {
+    color: white;
+    text-decoration: none;
+    background-color: #49a4df; }
+
+.navbar {
+  border-bottom: 3px solid #96c8df;
+  margin-bottom: 0;
+  background-color: white;
+  min-height: 110px;
+  padding-top: 30px; }
+  .navbar .buttons a {
+    text-transform: uppercase;
+    line-height: 1; }
+
+.nav {
+  margin-right: 30px; }
+  .nav > li > a {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #37495f; }
+    .nav > li > a:hover {
+      background-color: inherit;
+      text-decoration: underline; }
+
+a.silent {
+  color: inherit; }
+
+section.main {
+  padding: 50px; }
+  section.main h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: 0; }
+
+section.animation {
+  background-color: #a7dff8;
+  min-height: 690px; }
+
+section.partenaires {
+  padding: 20px; }
+
+section.lancement {
+  background-color: #3399db; }
+
+section.agenda {
+  padding: 50px; }
+  section.agenda .agenda-row {
+    margin-top: 25px; }
+    section.agenda .agenda-row .hour {
+      color: #3399db;
+      font-weight: bold; }
+    section.agenda .agenda-row h2 {
+      font-weight: bold;
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    section.agenda .agenda-row p {
+      margin-bottom: 0; }
+  section.agenda > .container:first-child {
+    margin-top: 0; }
+
+section.frenchtech {
+  background-color: #e41b23; }
+
+section.frenchtech-explanation {
+  padding: 20px; }
+  section.frenchtech-explanation h2 {
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px; }
+
+section.pourquoi {
+  padding: 20px;
+  background-color: #f63d43;
+  color: white; }
+  section.pourquoi h1 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px; }
+  section.pourquoi strong {
+    text-transform: uppercase; }
+
+section.frenchtech-natio {
+  padding: 20px;
+  background-color: #d8252b;
+  color: white; }
+  section.frenchtech-natio strong {
+    text-transform: uppercase; }
+
+section.soutenir {
+  background-color: #f39500; }
+
+section.thunderclap {
+  padding: 20px;
+  background-color: #e87301;
+  color: white; }
+
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-right: 0; }
+
+  .buttons {
+    text-align: center; }
+    .buttons > li {
+      padding-bottom: 10px;
+      padding-top: 10px;
+      display: block;
+      position: relative; } }
