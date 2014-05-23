@@ -30,6 +30,13 @@ body {
     text-decoration: none;
     background-color: #49a4df; }
 
+.navbar-toggle {
+  color: #37495f;
+  border-color: #37495f; }
+  .navbar-toggle .sr-only, .navbar-toggle .icon-bar {
+    color: #37495f;
+    border-color: #37495f; }
+
 .navbar {
   border-bottom: 3px solid #96c8df;
   margin-bottom: 0;
@@ -38,7 +45,21 @@ body {
   padding-top: 30px; }
   .navbar .buttons a {
     text-transform: uppercase;
-    line-height: 1; }
+    line-height: 1;
+    padding: 6px; }
+    .navbar .buttons a.social {
+      color: white;
+      padding: 0; }
+      .navbar .buttons a.social .fa-circle {
+        color: #dae4ea; }
+      .navbar .buttons a.social:hover .fa-circle {
+        color: #34495e; }
+
+.navbar-brand {
+  height: auto;
+  padding: 0; }
+  .navbar-brand img {
+    margin-top: -14px; }
 
 .nav {
   margin-right: 30px; }
@@ -55,7 +76,7 @@ a.silent {
   color: inherit; }
 
 section.main {
-  padding: 50px; }
+  padding: 50px 0; }
   section.main h1 {
     color: white;
     text-transform: uppercase;
@@ -67,15 +88,18 @@ section.animation {
   min-height: 690px; }
 
 section.partenaires {
-  padding: 20px; }
+  padding: 20px 0; }
 
 section.lancement {
-  background-color: #3399db; }
+  background: #3399db url("/img/motif-bleu.png") repeat; }
 
 section.agenda {
-  padding: 50px; }
+  padding: 50px 0; }
   section.agenda .agenda-row {
     margin-top: 25px; }
+    section.agenda .agenda-row img {
+      float: right;
+      margin-right: 20px; }
     section.agenda .agenda-row .hour {
       color: #3399db;
       font-weight: bold; }
@@ -89,38 +113,41 @@ section.agenda {
     margin-top: 0; }
 
 section.frenchtech {
-  background-color: #e41b23; }
+  background: #e41b23 url("/img/motif-rouge.png") repeat; }
 
 section.frenchtech-explanation {
-  padding: 20px; }
+  padding: 20px 0; }
   section.frenchtech-explanation h2 {
     font-weight: bold;
     margin-top: 5px;
     margin-bottom: 5px; }
 
 section.pourquoi {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #f63d43;
   color: white; }
   section.pourquoi h1 {
     font-weight: bold;
     margin-top: 0;
     margin-bottom: 20px; }
+  section.pourquoi img {
+    display: block;
+    margin: 0 auto 20px; }
   section.pourquoi strong {
     text-transform: uppercase; }
 
 section.frenchtech-natio {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #d8252b;
   color: white; }
   section.frenchtech-natio strong {
     text-transform: uppercase; }
 
 section.soutenir {
-  background-color: #f39500; }
+  background: #f39500 url("/img/motif-orange.png") repeat; }
 
 section.thunderclap {
-  padding: 20px;
+  padding: 20px 0;
   background-color: #e87301;
   color: white; }
 
@@ -140,4 +167,19 @@ section.contact {
       padding-bottom: 10px;
       padding-top: 10px;
       display: block;
-      position: relative; } }
+      position: relative; }
+
+  section.partenaires li {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: center; }
+
+  section.agenda .agenda-row {
+    margin: 0 auto; }
+    section.agenda .agenda-row img {
+      float: none;
+      margin: 20px auto; }
+
+  section.pourquoi .row.text-center > div {
+    min-height: 200px; } }

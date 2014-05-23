@@ -8,3 +8,10 @@ url: "http://yourdomain.com"
 # Build settings
 markdown: kramdown
 permalink: pretty
+partenaires:
+  - alsace
+  - cci
+  - rhenatic
+  - strasbourg
+  - mulhouse
+  - alsacedigitale

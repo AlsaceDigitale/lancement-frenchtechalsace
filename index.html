@@ -13,13 +13,12 @@
     <title>Lancement French Tech Alsace Strasbourg + Mulhouse</title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-
     <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-
-    <link href="{{ site.baseurl }}/css/main.css" rel="stylesheet">
-
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Optional theme -->
     <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> -->
+    <link href="{{ site.baseurl }}/css/main.css" rel="stylesheet">
+
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -34,22 +33,40 @@
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
+            <span class="sr-only">Navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Alsace Tech</a>
+          <a class="navbar-brand" href="/">
+            <img src="/img/logoalsacetech.png"/>
+          </a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav text-center">
             <li class="active"><a href="#">La French Tech</a></li>
-            <li><a href="#about">Programme</a></li>
+            <li><a href="#programme">Programme</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
           <ul class="list-inline buttons">
             <li><a href="#" class="btn btn-subscribe"><strong>S'inscrire à la soirée<br/>de lancement</strong></a></li>
             <li><a href="#" class="btn btn-thunderclap"><strong>Soutenir<br/>la candidature</strong></a></li>
+            <li>
+              <a href="https://www.facebook.com/" class="social">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" class="social">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
@@ -68,13 +85,16 @@
                 <br/>
                 <strong>partenaires</strong>
               </li>
+              {% for partenaire in site.partenaires %}
+              <li><img src="/img/logo{{ partenaire }}.png" /></li>
+              {% endfor %}
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="main lancement">
+    <section class="main lancement" id="programme">
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
@@ -84,13 +104,14 @@
       </div>
     </section>
 
-    <section class="agenda">
+    <section class="agenda" id="agenda">
       <div class="container">
 
         <div class="row agenda-row">
-          <div class="col-md-2">
+          <div class="col-xs-12 col-md-3">
+            <img src="/img/bulle.png"/>
           </div>
-          <div class="col-md-8">
+          <div class="col-xs-12 col-md-8">
             <div class="hour">- 18h30 à 19h30 -</div>
             <h2 class="h4">
               Discours officiel
@@ -104,9 +125,10 @@
         </div>
 
         <div class="row agenda-row">
-          <div class="col-md-2">
+          <div class="col-xs-12 col-md-3">
+            <img src="/img/infini.png"/>
           </div>
-          <div class="col-md-8">
+          <div class="col-xs-12 col-md-8">
             <div class="hour">- 19h30 -</div>
             <h2 class="h4">
               Enjeux d'une candidature French Tech
@@ -120,9 +142,10 @@
         </div>
 
         <div class="row agenda-row">
-          <div class="col-md-2">
+          <div class="col-xs-12 col-md-3">
+            <img src="/img/tablette.png"/>
           </div>
-          <div class="col-md-8">
+          <div class="col-xs-12 col-md-8">
             <div class="hour">- 19h40 -</div>
             <h2 class="h4">
               Alsace Digitale : association ancrée dans le développement numérique
@@ -134,9 +157,10 @@
         </div>
 
         <div class="row agenda-row">
-          <div class="col-md-2">
+          <div class="col-xs-12 col-md-3">
+            <img src="/img/chapeau.png"/>
           </div>
-          <div class="col-md-8">
+          <div class="col-xs-12 col-md-8">
             <div class="hour">- 19h50 à 21h -</div>
             <h2 class="h4">
               Présentation de startups et projets innovants alsaciens
@@ -150,7 +174,8 @@
         </div>
 
         <div class="row agenda-row">
-          <div class="col-md-2">
+          <div class="col-xs-12 col-md-3">
+            <img src="/img/cadeau.png"/>
           </div>
           <div class="col-md-8">
             <div class="hour">- 21h00 -</div>
@@ -179,6 +204,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-2">
+            <img src="/img/frenchtech.png"/>
           </div>
           <div class="col-md-8">
             <h2 class="h4">Une initiative gouvernementale ?</h2>
@@ -205,15 +231,19 @@
         </div>
         <div class="row text-center">
           <div class="col-xs-6 col-md-3">
+            <img src="/img/fusee.png"/>
             <strong>Accélérer la croissance des startups en Alsace</strong>
           </div>
           <div class="col-xs-6 col-md-3">
+            <img src="/img/eprouvette.png"/>
             <strong>Développer l'écosystème numérique</strong>
           </div>
           <div class="col-xs-6 col-md-3">
+            <img src="/img/ampoule.png"/>
             <strong>Animer des lieux dédiés au numérique</strong>
           </div>
           <div class="col-xs-6 col-md-3">
+            <img src="/img/terre.png"/>
             <strong>Augmenter l'attractivité internationale de la région</strong>
           </div>
         </div>
@@ -255,7 +285,25 @@
       </div>
     </section>
 
+    <section class="follow">
+    </section>
+
+    <section class="contact" id="contact">
+    </section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(event) {
+
+      $(".nav.navbar-nav a").on("click", function(e){
+        e.preventDefault();
+        var target = $(e.target).attr("href");
+        var target_node = $(target);
+        $('html, body').animate({scrollTop:target_node.offset().top-100}, 'slow');
+      });
+
+    });
+    </script>
   </body>
 </html>
