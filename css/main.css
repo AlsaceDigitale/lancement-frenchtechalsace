@@ -84,7 +84,7 @@ section.main {
     margin-top: 0; }
 
 section.animation {
-  background: #a7dff8 url("/img/slide.jpg") repeat center center;
+  background: #a7dff8 url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/slide.jpg") repeat center center;
   min-height: 693px;
   margin-top: 110px; }
   section.animation h1 {
@@ -102,7 +102,7 @@ section.partenaires {
   padding: 20px 0; }
 
 section.lancement {
-  background: #3399db url("/img/motif-bleu.png") repeat; }
+  background: #3399db url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/motif-bleu.png") repeat; }
 
 section.agenda {
   padding: 50px 0; }
@@ -124,7 +124,7 @@ section.agenda {
     margin-top: 0; }
 
 section.frenchtech {
-  background: #e41b23 url("/img/motif-rouge.png") repeat; }
+  background: #e41b23 url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/motif-rouge.png") repeat; }
 
 section.frenchtech-explanation {
   padding: 20px 0; }
@@ -155,7 +155,7 @@ section.frenchtech-natio {
     text-transform: uppercase; }
 
 section.soutenir {
-  background: #f39500 url("/img/motif-orange.png") repeat; }
+  background: #f39500 url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/motif-orange.png") repeat; }
 
 section.thunderclap {
   padding: 20px 0;
