@@ -19,7 +19,6 @@
     <!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css"> -->
     <link href="{{ site.baseurl }}/css/main.css" rel="stylesheet">
 
-
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -29,7 +28,7 @@
 
   <body>
 
-    <div class="navbar navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-fixed-top text-center" role="navigation">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -39,12 +38,24 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="/">
-            <img src="{{ site.baseurl }}/img/logoalsacetech.png"/>
+            <div class="pull-left">
+              <img src="{{ site.baseurl }}/img/frenchtech.png" />
+            </div>
+            <div class="pull-left text-left text">
+              <span class="tech">French Tech Alsace</span>
+              <br/>
+              <span class="pole">
+                Pôle Métropolitain
+                <br/>
+                Strasbourg-Mulhouse
+              </span>
+            </div>
           </a>
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav text-center">
-            <li class="active"><a href="#">La French Tech</a></li>
+            <li class="active text-left">
+            </li>
             <li><a href="#programme">Programme</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
@@ -84,17 +95,21 @@
     <section class="partenaires">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <ul class="list-inline">
-              <li>
-                Nos
-                <br/>
-                <strong>partenaires</strong>
-              </li>
+          <div class="col-xs-12 col-md-1">
+            Nos
+            <br/>
+            <strong>partenaires</strong>
+          </div>
+          <div class="col-xs-11">
+            <div class="row">
               {% for partenaire in site.partenaires %}
-              <li><img src="{{ site.baseurl }}/img/logo{{ partenaire }}.png" /></li>
+                <div class="col-xs-2">
+                  <div class="thumbnail">
+                    <img src="{{ site.baseurl }}/img/logo{{ partenaire }}.png" />
+                  </div>
+                </div>
               {% endfor %}
-            </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -104,7 +119,10 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h1 class="h3 text-center"><strong>Soirée de lancement</strong> de la candidature <strong>à Strasbourg le 12 juin 2014</strong></h1>
+            <h1 class="h3 text-center">
+              <strong>Soirée de lancement</strong> de la candidature
+              <br/>
+              <strong>à Strasbourg et Mulhouse le 12 juin 2014</strong></h1>
           </div>
         </div>
       </div>
@@ -125,7 +143,7 @@
               de lancement Strasbourg & Mulhouse
             </h2>
             <p>
-              Lancement officiel de la candidature French Tech conjointe entre Strasbourg et Mulhouse, en duplex entre Strasbourg et Mulhouse. Témoignages d'élus et parrains de la French Tech.
+              Lancement officiel de la candidature French Tech conjointe entre Strasbourg et Mulhouse, en duplex entre Strasbourg et Mulhouse. Témoignages d'élus et parrains de la French Tech. En présence de M. Robert Hermann, Président de la Communauté Urbaine de Strasbourg, et M. Jean Rottner, Maire de Mulhouse.
             </p>
           </div>
         </div>
@@ -137,7 +155,7 @@
           <div class="col-xs-12 col-md-8">
             <div class="hour">- 19h30 -</div>
             <h2 class="h4">
-              Enjeux d'une candidature French Tech
+              Enjeux de la candidature French Tech
               <br/>
               pour le pôle Métropolitain
             </h2>
@@ -175,7 +193,7 @@
               <li><strong>19h50</strong> : Projet iConsult issu du <a href="http://digitalhealthcamp.eu" class="silent" target="_blank">DigitalHealthCamp</a>, mariant santé et numérique</li>
               <li><strong>20h00</strong> : Présentation des membres de <a href="http://www.strasbourg-startups.com" class="silent" target="_blank">Strasbourg Startups</a></li>
               <li><strong>20h10</strong> : Présentation des prospects <a href="http://www.strasbourg-startups.com" class="silent" target="_blank">Strasbourg Startups</a></li>
-            </p>
+            </ul>
           </div>
         </div>
 
@@ -186,7 +204,7 @@
           <div class="col-md-8">
             <div class="hour">- 21h00 -</div>
             <h2 class="h4">
-              Buffet organisé par ...
+              Buffet
             </h2>
             <p>
             </p>
@@ -209,7 +227,7 @@
     <section class="frenchtech-explanation">
       <div class="container">
         <div class="row">
-          <div class="col-md-2">
+          <div class="col-md-4 text-center">
             <img src="{{ site.baseurl }}/img/frenchtech.png"/>
           </div>
           <div class="col-md-8">
@@ -232,7 +250,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12">
-            <h1 class="h3 text-center">Pourquoi devenir Label French Tech ?</h1>
+            <h1 class="h3 text-center">Pourquoi obtenir le Label French Tech ?</h1>
           </div>
         </div>
         <div class="row text-center">
@@ -261,7 +279,7 @@
         <div class="row">
           <div class="col-xs-12 text-center">
             <strong>Retrouvez toutes les informations sur le site officiel de la French Tech : </strong>
-            <a href="#" class="btn btn-frenchtech-natio"><strong>accéder au site</strong></a>
+            <a href="http://www.lafrenchtech.com/" class="btn btn-frenchtech-natio"><strong>accéder au site</strong></a>
           </div>
         </div>
       </div>
@@ -292,9 +310,71 @@
     </section>
 
     <section class="follow">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col-xs-4 col-xs-offset-2">
+            <p>
+            <strong>Suivez la candidature sur Facebook :</strong>
+            </p>
+          </div>
+          <div class="col-xs-4">
+            <p>
+            <strong>La presse en parle :</strong>
+            </p>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-xs-4 col-xs-offset-2">
+            <a href="https://www.facebook.com/frenchtechalsace.com" class="btn btn-subscribe">
+              <span class="pull-left"><i class="fa fa-facebook"></i></span>
+              Accéder à la page Facebook
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <a href="https://www.facebook.com/frenchtechalsace.com" class="btn btn-subscribe">
+              Lire l'article
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact text-center" id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p class="plusdinfos">
+              Si vous souhaitez plus d'informations sur l'événement ou la candidature French Tech, <strong>contactez nous</strong> :
+            </p>
+          </div>
+        </div>
+        <div class="row contactinfos">
+          <div class="col-xs-4 col-xs-offset-2">
+            <strong>Pour Strasbourg</strong>
+            <br/>
+            <strong>Yann Klis</strong>, Vice-Président d'Alsace Digitale
+            <br/>
+            <a href="mailto:yann.klis@alsacedigitale.org" class="btn btn-subscribe">
+              Contactez Yann par email
+            </a>
+          </div>
+          <div class="col-xs-4">
+            <strong>Pour Mulhouse</strong>
+            <br/>
+            <strong>Alain Dupont</strong>, Vice-Président de ...
+            <br/>
+            <a href="mailto:pipi@molo.fr" class="btn btn-subscribe">
+              Contactez Alain par email
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="made">
+      <div class="text-center">
+        Made with <i class="fa fa-heart"></i> in Alsace by <a href="http://www.novelys.com" target="_blank">Novelys</a> + <a href="http://www.goodmorningmajor.com" target="_blank">Good Morning Major</a> + <a href="http://www.methodinthemadness.eu" target="_blank">Method in The Madness</a>
+      </div>
     </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
