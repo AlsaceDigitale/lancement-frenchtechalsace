@@ -236,7 +236,8 @@ section.animation {
     background-color: #f63d43;
     color: white;
     display: inline-block;
-    padding: 8px 10px 6px 10px; }
+    padding: 8px 10px 6px 10px;
+    margin-top: 90px; }
   section.animation h2 {
     color: #0f68a4;
     text-shadow: 1px 1px 0 white; }
