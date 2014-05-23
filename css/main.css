@@ -84,8 +84,9 @@ section.main {
     margin-top: 0; }
 
 section.animation {
-  background-color: #a7dff8;
-  min-height: 690px; }
+  background: #a7dff8 url("/img/slide.jpg") repeat center center;
+  min-height: 693px;
+  margin-top: 110px; }
 
 section.partenaires {
   padding: 20px 0; }
