@@ -33,9 +33,7 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="fa fa-bars"></span>
           </button>
           <a class="navbar-brand" href="/">
             <div class="pull-left">
@@ -116,17 +114,18 @@
     <section class="partenaires">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-md-1">
+          <div class="col-xs-12 col-md-1 title">
             Nos
             <br/>
             <strong>partenaires</strong>
           </div>
-          <div class="col-xs-11">
+          <div class="col-xs-12 col-md-11">
             <div class="row">
               {% for partenaire in site.partenaires %}
-                <div class="col-xs-2">
+                <div class="col-xs-4 col-md-2">
                   <div class="thumbnail">
-                    <img src="{{ site.baseurl }}/img/logo{{ partenaire }}.png" />
+                    <img src="{{ site.baseurl }}/img/logo{{ partenaire }}.png" class="img-responsive" />
+                    <span class="v_align_fix"></span>
                   </div>
                 </div>
               {% endfor %}
@@ -333,25 +332,19 @@
     <section class="follow">
       <div class="container">
         <div class="row text-center">
-          <div class="col-xs-4 col-xs-offset-2">
+          <div class="col-xs-12 col-md-4 col-md-offset-2">
             <p>
             <strong>Suivez la candidature sur Facebook :</strong>
             </p>
-          </div>
-          <div class="col-xs-4">
-            <p>
-            <strong>La presse en parle :</strong>
-            </p>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-xs-4 col-xs-offset-2">
             <a href="https://www.facebook.com/frenchtechalsace.com" class="btn btn-subscribe">
               <span class="pull-left"><i class="fa fa-facebook"></i></span>
               Accéder à la page Facebook
             </a>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-md-4">
+            <p>
+            <strong>La presse en parle :</strong>
+            </p>
             <a href="https://www.facebook.com/frenchtechalsace.com" class="btn btn-subscribe">
               Lire l'article
             </a>
@@ -370,7 +363,7 @@
           </div>
         </div>
         <div class="row contactinfos">
-          <div class="col-xs-4 col-xs-offset-2">
+          <div class="col-xs-12 col-md-4 col-md-offset-2">
             <strong>Pour Strasbourg</strong>
             <br/>
             <strong>Yann Klis</strong>, Vice-Président d'Alsace Digitale
@@ -379,7 +372,7 @@
               Contactez Yann par email
             </a>
           </div>
-          <div class="col-xs-4">
+          <div class="col-xs-12 col-md-4">
             <strong>Pour Mulhouse</strong>
             <br/>
             <strong>Alain Dupont</strong>, Vice-Président de ...

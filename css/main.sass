@@ -267,6 +267,17 @@ $btn-subscribe-hover: #2c81ba
   border-radius: 0
   padding: 0
   height: 80px
+  white-space: nowrap
+  text-align: center
+  > *
+    vertical-align: middle
+    display: inline-block !important
+  .v_align_fix
+    height: 100%
+    vertical-align: middle
+    display: inline-block
+    width: 0px
+    white-space: nowrap
 
 a.silent
   color: inherit
@@ -399,6 +410,9 @@ section.made
 @media screen and (max-width: 767px)
   .nav
     margin-right: 0
+  .navbar-brand img
+    margin-right: 10px
+    margin-left: 10px
   .buttons
     text-align: center
     > li
@@ -425,3 +439,16 @@ section.made
     .row.text-center
       > div
         min-height: 200px
+
+  section.partenaires
+    .title
+      margin-bottom: 20px
+
+  section.frenchtech-explanation
+    > *:first-child > *:first-child > *:first-child
+      margin-bottom: 20px
+
+  section.follow
+    > *:first-child > *:first-child > *:first-child
+      margin-bottom: 20px
+
