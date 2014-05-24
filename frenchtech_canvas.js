@@ -70,6 +70,9 @@ function frenchtechAnimation() {
 
         this.canvas = new fabric.StaticCanvas( "frenchtech-animation" );
 
+        this.canvas.clear();
+        $("#animation-text").hide();
+
         this.scale.x = this.size.x / 1824.0;
         this.scale.y= this.size.y / 693.0;
 
