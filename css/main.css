@@ -253,7 +253,6 @@ section.main {
     margin-top: 0; }
 
 section.animation {
-  min-height: 693px;
   margin-top: 90px; }
   section.animation #animation-text {
     position: absolute;
