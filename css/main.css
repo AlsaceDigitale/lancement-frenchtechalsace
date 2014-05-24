@@ -282,23 +282,23 @@ section.partenaires {
 section.lancement {
   background: #3399db url("/img/motif-bleu.png") repeat; }
 
-section.agenda {
+section.programme {
   padding: 50px 0; }
-  section.agenda .agenda-row {
+  section.programme .programme-row {
     margin-top: 25px; }
-    section.agenda .agenda-row img {
+    section.programme .programme-row img {
       float: right;
       margin-right: 20px; }
-    section.agenda .agenda-row .hour {
+    section.programme .programme-row .hour {
       color: #3399db;
       font-weight: bold; }
-    section.agenda .agenda-row h2 {
+    section.programme .programme-row h2 {
       font-weight: bold;
       margin-top: 5px;
       margin-bottom: 5px; }
-    section.agenda .agenda-row p {
+    section.programme .programme-row p {
       margin-bottom: 0; }
-  section.agenda > .container:first-child {
+  section.programme > .container:first-child {
     margin-top: 0; }
 
 section.frenchtech {
@@ -404,9 +404,9 @@ section.made {
     margin-bottom: 20px;
     text-align: center; }
 
-  section.agenda .agenda-row {
+  section.programme .programme-row {
     margin: 0 auto; }
-    section.agenda .agenda-row img {
+    section.programme .programme-row img {
       float: none;
       margin: 20px auto; }
 
