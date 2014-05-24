@@ -274,6 +274,10 @@ section.animation {
 
 section.partenaires {
   padding: 20px 0; }
+  section.partenaires .title {
+    font-size: 140%;
+    line-height: 1;
+    margin-top: 20px; }
 
 section.lancement {
   background: #3399db url("/img/motif-bleu.png") repeat; }
