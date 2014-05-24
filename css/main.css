@@ -253,20 +253,24 @@ section.main {
     margin-top: 0; }
 
 section.animation {
-  background: #a7dff8 url("/img/slide.jpg") repeat center center;
   min-height: 693px;
   margin-top: 90px; }
+  section.animation #animation-text {
+    position: absolute;
+    left: 0px;
+    top: 90px;
+    width: 100%;
+    display: none; }
   section.animation h1 {
     background-color: #f63d43;
     color: white;
     display: inline-block;
-    padding: 8px 10px 6px 10px;
-    margin-top: 90px; }
+    padding: 8px 10px 6px 10px; }
   section.animation h2 {
     color: #0f68a4;
     text-shadow: 1px 1px 0 white; }
-    section.animation h2 strong {
-      font-style: italic; }
+  section.animation h2 strong {
+    font-style: italic; }
 
 section.partenaires {
   padding: 20px 0; }
