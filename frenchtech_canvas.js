@@ -9,9 +9,8 @@ $( document ).ready(function() {
     animation.initialize();
 
     $(window).on("resize", function(){
-      animation.initialize();
+        animation.resize();
     });
-
 });
 
 function frenchtechAnimation() {
@@ -70,57 +69,54 @@ function frenchtechAnimation() {
 
         this.canvas = new fabric.StaticCanvas( "frenchtech-animation" );
 
-        this.canvas.clear();
-        $("#animation-text").hide();
-
         this.scale.x = this.size.x / 1824.0;
         this.scale.y= this.size.y / 693.0;
 
         async.parallel([
                 function (callback) {
-                    fabric.Image.fromURL( 'img/01.jpg', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_arriere_plan.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/01.jpg', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_arriere_plan.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/09.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison6.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/09.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison6.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/08.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison5.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/08.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison5.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/04.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison1.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/04.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison1.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/03.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_tour_europe.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/03.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_tour_europe.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/05.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison2.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/05.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison2.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/02.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_cathedrale.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/02.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_cathedrale.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/06.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison3.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/06.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison3.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/07.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison4.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/07.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison4.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
-                    fabric.Image.fromURL( 'img/10.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison7.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/10.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison7.svg", function( value ) { callback( null, value ) });
                 },
 
                 function (callback) {
-                    fabric.Image.fromURL( 'img/11.png', function( image ) { callback( null, image );} );
-                    //fabric.loadSVGFromURL("images/french_tech_maison7.svg", function( value ) { callback( null, value ) });
+                    fabric.Image.fromURL( '/img/11.png', function( image ) { callback( null, image );} );
+                    //fabric.loadSVGFromURL("/img/french_tech_maison7.svg", function( value ) { callback( null, value ) });
                 },
             ], function (err, results) {
 
@@ -163,6 +159,24 @@ function frenchtechAnimation() {
 
     };
 
+    this.replaceObjects = function( canvas, buildings, coordsObjects ) {
+
+        for( var i = 0; i < buildings.length; i++ ) {
+
+            var building = buildings[ i ];
+
+            building.set( {
+                left: coordsObjects[ i ].x * this.scale.x,
+                top: coordsObjects[ i ].y * this.scale.y,
+                scaleX: this.scale.x,
+                scaleY: this.scale.y
+            });
+        }
+
+        this.canvas.renderAll();
+    };
+
+
     this.animateCity = function( cityIndexes, amount ) {
 
         for( var i = 0; i < cityIndexes.length; i++ ) {
@@ -176,5 +190,34 @@ function frenchtechAnimation() {
                 }
             );
         }
+    }
+
+    this.resize = function() {
+        this.size.x = this.myContainer.width();
+        this.size.y = this.myContainer.width() / this.baseRatio;
+
+        this.myCanvas.css( {
+            width: this.size.x,
+            height: this.size.y
+        });
+
+        this.myCanvas[ 0 ].width = this.size.x;
+        this.myCanvas[ 0 ].height = this.size.y;
+
+        this.scale.x = this.size.x / 1824.0;
+        this.scale.y= this.size.y / 693.0;
+
+        this.replaceObjects( this.canvas, this.buildings, this.startCoordinates );
+
+        this.animateCity( self.strasbourg, 400 * self.scale.x );
+        this.animateCity( self.mulhouse, -400 * self.scale.y );
+
+        // Make the title appear
+        $("#animation-text").hide();
+
+        setTimeout( function() {
+            $("#animation-text").fadeIn( 800 );
+        }, 3400 );
+
     }
 }
