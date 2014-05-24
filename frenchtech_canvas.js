@@ -8,6 +8,10 @@ $( document ).ready(function() {
 
     animation.initialize();
 
+    $(window).on("resize", function(){
+      animation.initialize();
+    });
+
 });
 
 function frenchtechAnimation() {
