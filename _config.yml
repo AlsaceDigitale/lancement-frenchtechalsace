@@ -9,9 +9,9 @@ url: "http://yourdomain.com"
 markdown: kramdown
 permalink: pretty
 partenaires:
-  - alsace
-  - cci
-  - rhenatic
   - strasbourg
   - mulhouse
   - alsacedigitale
+  - rhenatic
+  - alsace
+  - cci
