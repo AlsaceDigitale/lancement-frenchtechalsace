@@ -157,6 +157,19 @@ body {
     text-decoration: none;
     background-color: #2c81ba; }
 
+.modal-header .close {
+  margin-top: -10px; }
+
+.modal-body {
+  font-size: 200%; }
+  .modal-body .btn {
+    margin-top: 20px;
+    font-size: 110%; }
+  .modal-body .or {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: block; }
+
 .navbar-toggle {
   color: #37495f;
   border-color: #37495f; }
@@ -170,16 +183,16 @@ body {
   background-color: white;
   min-height: 90px;
   padding-top: 20px; }
-  .navbar .buttons a {
+  .navbar .buttons a, .navbar .buttons button {
     text-transform: uppercase;
     line-height: 1;
     padding: 6px; }
-    .navbar .buttons a.social {
+    .navbar .buttons a.social, .navbar .buttons button.social {
       color: white;
       padding: 0; }
-      .navbar .buttons a.social .fa-circle {
+      .navbar .buttons a.social .fa-circle, .navbar .buttons button.social .fa-circle {
         color: #dae4ea; }
-      .navbar .buttons a.social:hover .fa-circle {
+      .navbar .buttons a.social:hover .fa-circle, .navbar .buttons button.social:hover .fa-circle {
         color: #34495e; }
 
 .navbar-brand {
