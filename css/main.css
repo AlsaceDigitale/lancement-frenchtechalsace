@@ -3,127 +3,127 @@
   font-family: "Helvetica LT Std Black";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Black"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Blk.woff") format("woff"); }
+  src: local("Helvetica LT Std Black"), url("/fonts/HelveticaLTStd-Blk.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Black Condensed";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Black Condensed"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-BlkCond.woff") format("woff"); }
+  src: local("Helvetica LT Std Black Condensed"), url("/fonts/HelveticaLTStd-BlkCond.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Compressed";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Compressed"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Comp.woff") format("woff"); }
+  src: local("Helvetica LT Std Compressed"), url("/fonts/HelveticaLTStd-Comp.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Condensed";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Condensed"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Cond.woff") format("woff"); }
+  src: local("Helvetica LT Std Condensed"), url("/fonts/HelveticaLTStd-Cond.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Extra Compressed";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Extra Compressed"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-ExtraComp.woff") format("woff"); }
+  src: local("Helvetica LT Std Extra Compressed"), url("/fonts/HelveticaLTStd-ExtraComp.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Fractions";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Fractions"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Fraction.woff") format("woff"); }
+  src: local("Helvetica LT Std Fractions"), url("/fonts/HelveticaLTStd-Fraction.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Light"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Light.woff") format("woff"); }
+  src: local("Helvetica LT Std Light"), url("/fonts/HelveticaLTStd-Light.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Light Condensed";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Light Condensed"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-LightCond.woff") format("woff"); }
+  src: local("Helvetica LT Std Light Condensed"), url("/fonts/HelveticaLTStd-LightCond.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Roman";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Roman"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Roman.woff") format("woff"); }
+  src: local("Helvetica LT Std Roman"), url("/fonts/HelveticaLTStd-Roman.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Ultra Compressed";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Ultra Compressed"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-UltraComp.woff") format("woff"); }
+  src: local("Helvetica LT Std Ultra Compressed"), url("/fonts/HelveticaLTStd-UltraComp.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Black Condensed Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Black Condensed Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-BlkCondObl.woff") format("woff"); }
+  src: local("Helvetica LT Std Black Condensed Oblique"), url("/fonts/HelveticaLTStd-BlkCondObl.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Black Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Black Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-BlkObl.woff") format("woff"); }
+  src: local("Helvetica LT Std Black Oblique"), url("/fonts/HelveticaLTStd-BlkObl.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Bold"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Bold.woff") format("woff"); }
+  src: local("Helvetica LT Std Bold"), url("/fonts/HelveticaLTStd-Bold.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Bold Condensed";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Bold Condensed"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-BoldCond.woff") format("woff"); }
+  src: local("Helvetica LT Std Bold Condensed"), url("/fonts/HelveticaLTStd-BoldCond.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Bold Condensed Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Bold Condensed Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-BoldCondObl.woff") format("woff"); }
+  src: local("Helvetica LT Std Bold Condensed Oblique"), url("/fonts/HelveticaLTStd-BoldCondObl.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Bold Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Bold Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-BoldObl.woff") format("woff"); }
+  src: local("Helvetica LT Std Bold Oblique"), url("/fonts/HelveticaLTStd-BoldObl.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Condensed Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Condensed Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-CondObl.woff") format("woff"); }
+  src: local("Helvetica LT Std Condensed Oblique"), url("/fonts/HelveticaLTStd-CondObl.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Fractions Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Fractions Bold"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-FractionBold.woff") format("woff"); }
+  src: local("Helvetica LT Std Fractions Bold"), url("/fonts/HelveticaLTStd-FractionBold.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Light Condensed Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Light Condensed Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-LightCondObl.woff") format("woff"); }
+  src: local("Helvetica LT Std Light Condensed Oblique"), url("/fonts/HelveticaLTStd-LightCondObl.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Light Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Light Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-LightObl.woff") format("woff"); }
+  src: local("Helvetica LT Std Light Oblique"), url("/fonts/HelveticaLTStd-LightObl.woff") format("woff"); }
 
 @font-face {
   font-family: "Helvetica LT Std Oblique";
   font-style: normal;
   font-weight: normal;
-  src: local("Helvetica LT Std Oblique"), url("http://alsacedigitale.github.io/lancement-frenchtechalsace//fonts/HelveticaLTStd-Obl.woff") format("woff"); }
+  src: local("Helvetica LT Std Oblique"), url("/fonts/HelveticaLTStd-Obl.woff") format("woff"); }
 
 body {
   color: #37495f;
@@ -253,7 +253,7 @@ section.main {
     margin-top: 0; }
 
 section.animation {
-  background: #a7dff8 url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/slide.jpg") repeat center center;
+  background: #a7dff8 url("/img/slide.jpg") repeat center center;
   min-height: 693px;
   margin-top: 90px; }
   section.animation h1 {
@@ -272,7 +272,7 @@ section.partenaires {
   padding: 20px 0; }
 
 section.lancement {
-  background: #3399db url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/motif-bleu.png") repeat; }
+  background: #3399db url("/img/motif-bleu.png") repeat; }
 
 section.agenda {
   padding: 50px 0; }
@@ -294,7 +294,7 @@ section.agenda {
     margin-top: 0; }
 
 section.frenchtech {
-  background: #e41b23 url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/motif-rouge.png") repeat; }
+  background: #e41b23 url("/img/motif-rouge.png") repeat; }
 
 section.frenchtech-explanation {
   padding: 20px 0; }
@@ -325,7 +325,7 @@ section.frenchtech-natio {
     text-transform: uppercase; }
 
 section.soutenir {
-  background: #f39500 url("http://alsacedigitale.github.io/lancement-frenchtechalsace//img/motif-orange.png") repeat; }
+  background: #f39500 url("/img/motif-orange.png") repeat; }
 
 section.thunderclap {
   padding: 20px 0;
