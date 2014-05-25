@@ -129,6 +129,9 @@ body {
   color: #37495f;
   margin-top: 50px; }
 
+.text-italic {
+  font-style: italic; }
+
 .btn-thunderclap {
   color: white;
   background-color: #ff9c00;
