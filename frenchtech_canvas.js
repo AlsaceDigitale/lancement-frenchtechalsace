@@ -15,10 +15,11 @@ $( document ).ready(function() {
 
 function frenchtechAnimation() {
 
-    this.myCanvas = $("#frenchtech-animation");
+    this.myCanvas = $("#frenchtech-animation").get(0);
     this.myContainer = $(".canvas-container");
 
-    this.baseRatio = 2.35223048;
+    this.baseRatio = 2.632034632;
+    // this.baseRatio = 2.35223048;
 
     this.objects = [];
 
@@ -64,17 +65,17 @@ function frenchtechAnimation() {
 
     this.initialize = function() {
 
-        this.myCanvas[ 0 ].width = this.size.x;
-        this.myCanvas[ 0 ].height = this.size.y;
+        this.myCanvas.width = this.size.x;
+        this.myCanvas.height = this.size.y;
 
         this.canvas = new fabric.StaticCanvas( "frenchtech-animation" );
 
         this.scale.x = this.size.x / 1824.0;
-        this.scale.y= this.size.y / 693.0;
+        this.scale.y = this.size.y / 693.0;
 
         async.parallel([
                 function (callback) {
-                    fabric.Image.fromURL( '/img/01.jpg', function( image ) { callback( null, image );} );
+                    fabric.Image.fromURL( '/img/transparent.gif', function( image ) { callback( null, image );} );
                     //fabric.loadSVGFromURL("/img/french_tech_arriere_plan.svg", function( value ) { callback( null, value ) });
                 },
                 function (callback) {
@@ -131,9 +132,9 @@ function frenchtechAnimation() {
                 self.animateCity( self.mulhouse, -400 * self.scale.y );
 
                 // Make the title appear
-                setTimeout( function() {
-                    $("#animation-text").fadeIn( 800 );
-                }, 3400 );
+                // setTimeout( function() {
+                //     $("#animation-text").fadeIn( 800 );
+                // }, 3400 );
             }
         );
     }
@@ -156,6 +157,8 @@ function frenchtechAnimation() {
         }
 
         this.canvas.renderAll();
+
+        $("section.animation").css({height: Math.floor(693*this.scale.y)});
 
     };
 
@@ -201,23 +204,15 @@ function frenchtechAnimation() {
             height: this.size.y
         });
 
-        this.myCanvas[ 0 ].width = this.size.x;
-        this.myCanvas[ 0 ].height = this.size.y;
+        this.myCanvas.width = this.size.x;
+        this.myCanvas.height = this.size.y;
 
         this.scale.x = this.size.x / 1824.0;
-        this.scale.y= this.size.y / 693.0;
+        this.scale.y = this.size.y / 693.0;
 
         this.replaceObjects( this.canvas, this.buildings, this.startCoordinates );
 
         this.animateCity( self.strasbourg, 400 * self.scale.x );
         this.animateCity( self.mulhouse, -400 * self.scale.y );
-
-        // Make the title appear
-        $("#animation-text").hide();
-
-        setTimeout( function() {
-            $("#animation-text").fadeIn( 800 );
-        }, 3400 );
-
     }
 }

@@ -256,24 +256,26 @@ section.main {
     margin-bottom: 0;
     margin-top: 0; }
 
-section.animation {
+section.preanimation {
+  background-color: #a9e1f8;
   margin-top: 90px; }
-  section.animation #animation-text {
-    position: absolute;
-    left: 0px;
-    top: 90px;
-    width: 100%;
-    display: none; }
-  section.animation h1 {
+  section.preanimation h1 {
     background-color: #f63d43;
     color: white;
     display: inline-block;
     padding: 8px 10px 6px 10px; }
-  section.animation h2 {
+  section.preanimation h2 {
     color: #0f68a4;
     text-shadow: 1px 1px 0 white; }
-  section.animation h2 strong {
+  section.preanimation h2 strong {
     font-style: italic; }
+
+section.animation {
+  background: #a9e1f8 url("/img/01.jpg") repeat-x center center;
+  background-size: contain; }
+  section.animation > .container {
+    padding-left: 0;
+    padding-right: 0; }
 
 section.partenaires {
   padding: 20px 0; }
