@@ -135,11 +135,11 @@ body {
 .btn-thunderclap {
   color: white;
   background-color: #ff9c00;
-  box-shadow: 1px 1px 0 #e87300; }
+  box-shadow: 1px 1px 0 #e85d00; }
   .btn-thunderclap:hover {
     color: white;
     text-decoration: none;
-    background-color: #e87300; }
+    background-color: #e85d00; }
 
 .btn-frenchtech-natio {
   margin-left: 20px;
