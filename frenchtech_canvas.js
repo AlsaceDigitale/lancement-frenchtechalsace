@@ -158,7 +158,7 @@ function frenchtechAnimation() {
 
         this.canvas.renderAll();
 
-        $("section.animation").css({height: Math.floor(693*this.scale.y)});
+        // $("section.animation").css({height: Math.floor(693*this.scale.y)});
 
     };
 
@@ -199,10 +199,10 @@ function frenchtechAnimation() {
         this.size.x = this.myContainer.width();
         this.size.y = this.myContainer.width() / this.baseRatio;
 
-        this.myCanvas.css( {
-            width: this.size.x,
-            height: this.size.y
-        });
+        // this.myCanvas.css( {
+        //     width: this.size.x,
+        //     height: this.size.y
+        // });
 
         this.myCanvas.width = this.size.x;
         this.myCanvas.height = this.size.y;
