@@ -190,13 +190,13 @@ body {
     text-transform: uppercase;
     line-height: 1;
     padding: 6px; }
-    .navbar .buttons a.social, .navbar .buttons button.social {
-      color: white;
-      padding: 0; }
-      .navbar .buttons a.social .fa-circle, .navbar .buttons button.social .fa-circle {
-        color: #dae4ea; }
-      .navbar .buttons a.social:hover .fa-circle, .navbar .buttons button.social:hover .fa-circle {
-        color: #34495e; }
+  .navbar .buttons .social a, .navbar .buttons .social button {
+    color: white;
+    padding: 0; }
+    .navbar .buttons .social a .fa-circle, .navbar .buttons .social button .fa-circle {
+      color: #dae4ea; }
+    .navbar .buttons .social a:hover .fa-circle, .navbar .buttons .social button:hover .fa-circle {
+      color: #34495e; }
 
 .navbar-brand {
   height: auto;
@@ -402,6 +402,8 @@ section.made {
       padding-top: 10px;
       display: block;
       position: relative; }
+      .buttons > li.social {
+        display: inline-block; }
 
   section.animation h1, section.animation h2 {
     margin-top: 0; }
