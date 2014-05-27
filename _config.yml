@@ -9,9 +9,17 @@ url: "http://yourdomain.com"
 markdown: kramdown
 permalink: pretty
 partenaires:
+  - pole
   - strasbourg
   - mulhouse
   - alsacedigitale
   - rhenatic
   - alsace
   - cci
+  - semia
+  - prefecture
+  - uds
+  - alsacebiovalley
+  - alsaceinnovation
+  - energivie
+  - syntec
