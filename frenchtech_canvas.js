@@ -15,7 +15,7 @@ $( document ).ready(function() {
 
 function frenchtechAnimation() {
 
-    this.myCanvas = $("#frenchtech-animation").get(0);
+    this.myCanvas = $("#frenchtech-animation");
     this.myContainer = $(".canvas-container");
 
     this.baseRatio = 2.632034632;
@@ -65,8 +65,8 @@ function frenchtechAnimation() {
 
     this.initialize = function() {
 
-        this.myCanvas.width = this.size.x;
-        this.myCanvas.height = this.size.y;
+        this.myCanvas[ 0 ].width = this.size.x;
+        this.myCanvas[ 0 ].height = this.size.y;
 
         this.canvas = new fabric.StaticCanvas( "frenchtech-animation" );
 
