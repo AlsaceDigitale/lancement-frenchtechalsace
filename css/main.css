@@ -275,7 +275,17 @@ section.animation {
   background-size: contain; }
   section.animation > .container {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+    margin-bottom: 0; }
+    section.animation > .container .canvas-container {
+      position: relative;
+      padding-bottom: 37.99342%;
+      height: 0;
+      overflow: hidden;
+      position: relative; }
 
 section.partenaires {
   padding: 20px 0; }
