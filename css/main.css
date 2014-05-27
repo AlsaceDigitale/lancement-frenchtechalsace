@@ -294,6 +294,10 @@ section.programme {
     margin-bottom: 40px; }
   section.programme .programme-row {
     margin-top: 25px; }
+    section.programme .programme-row.subtitle {
+      margin-bottom: 40px; }
+      section.programme .programme-row.subtitle h2 {
+        text-decoration: underline; }
     section.programme .programme-row img {
       float: right;
       margin-right: 20px; }
@@ -417,6 +421,9 @@ section.made {
     section.programme .programme-row img {
       float: none;
       margin: 20px auto; }
+    section.programme .programme-row.subtitle {
+      margin-top: 40px;
+      margin-bottom: 20px; }
 
   section.pourquoi .row.text-center > div {
     min-height: 200px; }
