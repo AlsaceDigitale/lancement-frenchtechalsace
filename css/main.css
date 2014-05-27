@@ -308,6 +308,8 @@ section.programme {
       margin-bottom: 40px; }
       section.programme .programme-row.subtitle h2 {
         text-decoration: underline; }
+    section.programme .programme-row.ticketing {
+      margin-top: 40px; }
     section.programme .programme-row img {
       float: right;
       margin-right: 20px; }
@@ -398,6 +400,9 @@ section.made {
     text-decoration: underline; }
 
 @media screen and (max-width: 767px) {
+  .btn {
+    white-space: normal; }
+
   .nav {
     margin-right: 0; }
 
